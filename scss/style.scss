@@ -1,102 +1,42 @@
 @import "variables";
 @import "reset-styles";
+@import "fonts";
 
 #menu-body {
     width: 100vw;
     height: 100vh;
-    background-color: $color2;
+    background-color: $bg_color;
     .container {
         margin: 0 auto;
-        margin-bottom: 75px;
-        padding: 30px 0;
+        padding-bottom: 75px;
+        padding-top: 30px;
         width: 1400px;
         .title {
             width: 100%;
             height: auto;
             &__text {
                 text-align: center;
-                font-family: "Lugrasimo", cursive;
+                font-family: "Montserrat", serif;
                 font-weight: 500;
                 font-style: normal;
-                font-size: 54px;
-                color: $color1;
+                font-size: 64px;
+                color: $color_text;
             }
         }
-        .menu {
-            margin-top: 40px;
-            border: 3px solid $color1;
-            padding: 30px 0;
-            &__title {
+        .block {
+            border: 3px solid $color_text;
+            background-color: $bg_menu_color;
+            .title {
                 text-align: center;
-                font-family: "Lugrasimo", cursive;
-                font-weight: 700;
-                font-style: normal;
-                font-size: 72px;
-                color: $color1;
-            }
-            &__list {
-                margin-top: 30px;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                .menu-item {
-                    display: flex;
-                    flex-direction: column;
-                    min-width: 45%;
-                    margin: 30px 0;
-                    text-align: center;
-                    &__image-block {
-                        width: auto;
-                        height: 200px;
-                    }
-                    &__image {
-                        width: auto;
-                        height: 100%;
-                        margin: 0 auto;
-                        border-radius: 50%;
-                    }
-                    &__info {
-                        margin: 30px 0;
-                    }
-                    &__title {
-                        font-family: "Lugrasimo", normal;
-                        font-weight: 600;
-                        font-style: normal;
-                        font-size: 32px;
-                        color: $color1;
-                        margin-right: 40px;
-                    }
-                    &__price {
-                        font-family: "Lugrasimo", normal;
-                        font-weight: 400;
-                        font-style: normal;
-                        font-size: 32px;
-                        color: $color1;
-                    }
-                    &__size {
-                        text-align: center;
-                        font-family: "Allura", cursive;
-                        font-weight: 500;
-                        font-style: normal;
-                        font-size: 30px;
-                        color: $color1;
-                        margin-top: 10px;
-                    }
-                    &__about {
-                        text-align: center;
-                        font-family: "Allura", cursive;
-                        font-weight: 400;
-                        font-style: normal;
-                        font-size: 23px;
-                        color: $color1;
-                        width: 80%;
-                        margin: 0 auto;
-                        letter-spacing: 1px;
-                    }
-                }
+                font-family: "Cotillion Regular", normal;
+                font-weight: 500;
+                font-size: 200px;
+                line-height: 0.1;
+                color: $color_text;
             }
         }
+        @import "menu/menu";
+        @import "syrups/syrups";
     }
     .row {
         display: flex;
@@ -105,4 +45,5 @@
     }
 }
 
-@import "styles-media"
+@import "menu/menu-media";
+@import "syrups/syrups-media";

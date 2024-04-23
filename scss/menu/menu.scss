@@ -1,0 +1,64 @@
+.menu {
+    margin-top: 40px;
+    padding: 30px 0;
+    &__list {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            min-width: 48%;
+            margin: 20px 0;
+            text-align: center;
+            &__image-block {
+                width: auto;
+                height: 300px;
+            }
+            &__image {
+                width: auto;
+                height: 100%;
+                margin: 0 auto;
+            }
+            &__info {
+                margin: 10px 0;
+            }
+            &__title {
+                font-family: "Montserrat", serif;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 40px;
+                color: $color_text;
+                margin-right: 10px;
+            }
+            &__price {
+                font-family: "Montserrat", serif;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 40px;
+                color: $color_text;
+            }
+            &__size {
+                text-align: center;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 400;
+                font-style: italic;
+                font-size: 26px;
+                color: $color_text;
+                margin: 5px auto;
+            }
+            &__about {
+                text-align: center;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 400;
+                font-style: italic;
+                font-size: 16px;
+                color: $color_about;
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

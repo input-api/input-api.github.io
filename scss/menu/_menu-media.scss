@@ -1,32 +1,17 @@
-@import "variables";
-
 @media screen and (max-width: 1500px) {
     #menu-body {
         .container {
-            margin-bottom: 75px;
-            padding: 30px 0;
             width: 1100px;
             .menu {
                 &__list {
                     .menu-item {
                         min-width: 100%;
-                        margin: 30px 0;
                         &__image-block {
                             width: auto;
-                            height: 250px;
+                            height: 400px;
                         }
-                        &__title {
-                            font-size: 38px;
-                            margin-right: 40px;
-                        }
-                        &__price {
-                            font-size: 38px;
-                        }
-                        &__size {
-                            font-size: 38px;
-                        }
-                        &__about {
-                            font-size: 30px;
+                        &__info {
+                            margin: 0;
                         }
                     }
                 }
@@ -38,8 +23,6 @@
 @media screen and (max-width: 1200px) {
     #menu-body {
         .container {
-            margin-bottom: 45px;
-            padding: 30px 0;
             width: 900px;
         }
     }
@@ -48,8 +31,6 @@
 @media screen and (max-width: 992px) {
     #menu-body {
         .container {
-            margin-bottom: 75px;
-            padding: 30px 0;
             width: 668px;
         }
     }
@@ -58,25 +39,29 @@
 @media screen and (max-width: 768px) {
     #menu-body {
         .container {
-            margin-bottom: 75px;
-            padding: 30px 0;
             width: 500px;
+            .title {
+                &__text {
+                    font-size: 54px;
+                    line-height: 1;
+                }
+            }
+            .block {
+                .title {
+                    font-size: 150px;
+                }
+            }
             .menu {
                 &__title {
-                    font-size: 68px;
+                    padding-left: 30px;
                 }
                 &__list {
                     .menu-item {
                         &__image-block {
                             width: auto;
-                            height: 230px;
+                            height: 300px;
                         }
-                        &__size {
-                            font-size: 34px;
-                        }
-                        &__about {
-                            font-size: 28px;
-                        }
+
                     }
                 }
             }
@@ -87,47 +72,41 @@
 @media screen and (max-width: 576px) {
     #menu-body {
         .container {
-            margin-bottom: 0;
-            padding: 20px 0;
+            margin-bottom: 45px;
+            padding-top: 20px;
             width: 350px;
             .title {
                 &__text {
-                    font-size: 42px;
-                    line-height: 1.3
+                    font-size: 38px;
+                    line-height: 1.5
+                }
+            }
+            .block {
+                border: 2px solid $color_text;
+                .title {
+                    font-size: 140px;
                 }
             }
             .menu {
                 margin-top: 20px;
-                border: 2px solid $color1;
                 padding: 20px 0;
-                &__title {
-                    font-size: 50px;
-                }
                 &__list {
-                    margin-top: 10px;
+                    margin-top: 30px;
                     .menu-item {
-                        margin: 20px 0;
                         &__image-block {
-                            height: 150px;
-                        }
-                        &__info {
-                            margin: 20px 0;
+                            height: 200px;
                         }
                         &__title {
                             font-size: 32px;
-                            margin-right: 20px;
                         }
                         &__price {
                             font-size: 32px;
                         }
                         &__size {
-                            font-size: 26px;
-                            margin: 10px auto;
+                            font-size: 20px;
                         }
                         &__about {
-                            font-size: 21px;
-                            margin: 0 auto;
-                            width: 80%;
+                            font-size: 12px;
                         }
                     }
                 }

@@ -1,7 +1,6 @@
 {
   "name": "menu-",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +18,14 @@
     "gulp-sourcemaps": "^3.0.0",
     "node-sass": "^9.0.0",
     "rename": "^1.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/input-api/input-api.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/input-api/input-api.github.io/issues"
+  },
+  "homepage": "https://github.com/input-api/input-api.github.io#readme",
+  "description": ""
 }
