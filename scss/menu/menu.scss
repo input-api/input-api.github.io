@@ -59,6 +59,26 @@
                 width: 80%;
                 margin: 0 auto;
             }
+            &__details {
+                margin-top: 25px;
+                height: 0;
+                opacity: 0;
+                transition: height 0.5s ease;
+                transition: opacity 0.5s ease;
+            }
+            &.details {
+                & > .menu-item__info {
+                    & >  .menu-item__details {
+                        height: auto;
+                        opacity: 1;
+                    }
+                    & > .row {
+                        &::after {
+                            content: "▲";
+                        }
+                    }
+                }
+            }
         }
     }
 }

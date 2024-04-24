@@ -112,5 +112,10 @@
                 }
             }
         }
+        .row {
+            &::after {
+                font-size: 22px;
+            }
+        }
     }
 }
