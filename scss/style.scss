@@ -6,7 +6,7 @@
     width: 100vw;
     height: 100vh;
     background: $bg_color url("../source/img/bg_forest.jpg") center center no-repeat fixed;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     .container {
         position: relative;
         z-index: 2;
