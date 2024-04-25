@@ -5,18 +5,11 @@
 #menu-body {
     width: 100vw;
     height: 100vh;
-    .bg_img {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        object-fit: contain;
-    }
+    background-image: url('../source/img/bg_forest.jpg'); /* URL вашого зображення */
+    background-size: cover; /* Заповнення всього контейнера */
+    background-position: center; /* Вирівнювання зображення */
+    background-attachment: fixed; /* Фіксуємо зображення */
     .container {
-        position: relative;
-        z-index: 2;
         margin: 0 auto;
         padding-bottom: 75px;
         padding-top: 30px;
