@@ -1,17 +1,19 @@
 @media screen and (max-width: 768px) {
     #menu-body {
-        .container {
-            .syrups {
-                &__title {
-                    font-size: 100px !important;
-                    margin: 20px 0 40px;
-                }
-                &__list {
-                    padding-bottom: 10px;
-                    .syrups-item {
-                        margin: 20px 0;
-                        &__name {
-                            font-size: 30px;
+        #bg_image {
+            .container {
+                .syrups {
+                    &__title {
+                        font-size: 100px !important;
+                        margin: 20px 0 40px;
+                    }
+                    &__list {
+                        padding-bottom: 10px;
+                        .syrups-item {
+                            margin: 20px 0;
+                            &__name {
+                                font-size: 30px;
+                            }
                         }
                     }
                 }
@@ -22,19 +24,21 @@
 
 @media screen and (max-width: 576px) {
     #menu-body {
-        .container {
-            .syrups {
-                margin-top: 50px;
-                &__title {
-                    font-size: 95px !important;
-                    margin: 10px 0 30px;
-                }
-                &__list {
-                    padding: 10px 0;
-                    .syrups-item {
-                        margin: 20px 0;
-                        &__name {
-                            font-size: 26px;
+        #bg_image {
+            .container {
+                .syrups {
+                    margin-top: 50px;
+                    &__title {
+                        font-size: 95px !important;
+                        margin: 10px 0 30px;
+                    }
+                    &__list {
+                        padding: 10px 0;
+                        .syrups-item {
+                            margin: 20px 0;
+                            &__name {
+                                font-size: 26px;
+                            }
                         }
                     }
                 }
