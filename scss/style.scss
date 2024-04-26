@@ -5,54 +5,63 @@
 #menu-body {
     width: 100vw;
     height: 100vh;
-    background-color: #38761D;
-    .container {
-        position: relative;
-        z-index: 2;
-        margin: 0 auto;
-        padding-bottom: 75px;
-        padding-top: 30px;
-        width: 1400px;
-        .title {
-            width: 100%;
-            height: auto;
-            &__text {
-                text-align: center;
-                font-family: "Montserrat", serif;
-                font-weight: 700;
-                font-style: normal;
-                font-size: 64px;
-                color: $color_text;
-            }
-        }
-        .block {
-            border: 3px solid $color_text;
-            background-color: $bg_menu_color;
+    background-color: $bg_color;
+    #bg_image {
+        width: 100%;
+        height: auto;
+        background-image: url("../source/img/bg_forest.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .container {
+            position: relative;
+            z-index: 2;
+            margin: 0 auto;
+            padding-bottom: 75px;
+            padding-top: 30px;
+            width: 1400px;
             .title {
-                text-align: center;
-                font-family: "Cotillion Regular", normal;
-                font-weight: 500;
-                font-size: 200px;
-                line-height: 0.1;
-                color: $color_text;
+                width: 100%;
+                height: auto;
+                &__text {
+                    text-align: center;
+                    font-family: "Montserrat", serif;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: 64px;
+                    color: $color_text;
+                }
             }
+            .block {
+                border: 3px solid $color_text;
+                background-color: $bg_menu_color;
+                .title {
+                    text-align: center;
+                    font-family: "Cotillion Regular", normal;
+                    font-weight: 500;
+                    font-size: 200px;
+                    line-height: 0.1;
+                    color: $color_text;
+                }
+            }
+            @import "menu/menu";
+            @import "syrups/syrups";
         }
-        @import "menu/menu";
-        @import "syrups/syrups";
-    }
-    .row {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        position: relative;
-        &::after {
-            position: absolute;
-            content: "▼";
-            font-size: 24px;
-            height: 10px;
-            width: auto;
-            bottom: -10px;
-            transition: transform 0.6s;
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "▼";
+                font-size: 24px;
+                height: 10px;
+                width: auto;
+                bottom: -10px;
+                transition: transform 0.6s;
+            }
         }
     }
 }
