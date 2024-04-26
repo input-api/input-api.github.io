@@ -7,8 +7,8 @@ menuItems.forEach(function(menuItem) {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    var windowWidth = window.innerWidth;
-    var windowHeight = window.innerHeight;
+    var windowWidth = window.screen.width;
+    var windowHeight = window.screen.height;
   
     var backgroundImageUrl = "source/img/bg_forest.jpg"; 
     var backgroundSection = document.querySelector('#menu-body');
