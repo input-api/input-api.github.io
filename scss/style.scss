@@ -42,7 +42,34 @@
                 }
             }
             @import "menu/menu";
+            .button-block {
+                width: 100%;
+                text-align: center;
+                .button {
+                    background-color: #fff;
+                    border-radius: 20px;
+                    border: 3px solid $color_text;
+                    padding: 10px 10px;
+                    margin: 20px auto;
+                    text-align: center;
+                    font-family: "Montserrat", serif;
+                    font-weight: 500;
+                    font-size: 25px;
+                    &:hover {
+                        background-color: $color_about;
+                        border: 3px solid $color_about;
+                        color: #fff
+                    }
+                }
+            }
+            @import "seasonal-menu/seasonal-menu";
             @import "syrups/syrups";
+            .show {
+                display: block;
+            }
+            .hidden {
+                display: none;
+            }
         }
         .row {
             display: flex;
@@ -63,4 +90,5 @@
 }
 
 @import "menu/menu-media";
+@import "seasonal-menu/seasonal-menu-media";
 @import "syrups/syrups-media";

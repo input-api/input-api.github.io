@@ -1,0 +1,7 @@
+.seasonal-menu {
+    margin-top: 40px;
+    padding-top: 50px;
+    .menu__title {
+        @extend .menu__title
+    }
+}
