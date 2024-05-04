@@ -95,6 +95,14 @@
                         font-size: 140px;
                     }
                 }
+                .button-block {
+                    .button {
+                        border: 2px solid $color_text;
+                        &:hover {
+                            border: 2px solid $color_about;
+                        }
+                    }
+                }
                 .menu {
                     margin-top: 20px;
                     padding: 20px 0;
